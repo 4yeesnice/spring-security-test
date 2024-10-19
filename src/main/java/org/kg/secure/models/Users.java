@@ -1,16 +1,16 @@
-package org.kg.secure.controller;
+package org.kg.secure.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.management.relation.Role;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
+import java.util.Collections;
 import java.util.stream.Collectors;
 
 @Data
@@ -22,13 +22,14 @@ public class Users implements UserDetails {
     private Long id;
     private String username;
     private String password;
-    private String roles;
+
+    @JsonProperty(value = "role")
+    private Roles roles;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Arrays.stream(roles.split(", "))
-                .map(SimpleGrantedAuthority::new)
-                .collect(Collectors.toList());
+//        return Collections.singleton(new SimpleGrantedAuthority(roles));
+        return Arrays.asList(new SimpleGrantedAuthority(roles.name()));
     }
 
     @Override
@@ -49,5 +50,9 @@ public class Users implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    enum Roles {
+        ADMIN, USER
     }
 }
