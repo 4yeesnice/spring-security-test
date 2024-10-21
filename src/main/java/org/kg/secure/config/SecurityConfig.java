@@ -58,7 +58,7 @@ public class SecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/v1/registry", "/api/v1/login", "/api/v1/test").permitAll()  // Permit public endpoints
+                        .requestMatchers("/api/v1/sign_in", "/api/v1/log_in", "/api/v1/test").permitAll()  // Permit public endpoints
                         .anyRequest().authenticated()  // All other requests must be authenticated
                 )
                 .authenticationProvider(getAuthenticationProvider())  // Attach the custom authentication provider

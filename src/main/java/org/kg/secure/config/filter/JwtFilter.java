@@ -22,14 +22,13 @@ import java.util.List;
 @Component
 public class JwtFilter extends OncePerRequestFilter {
 
-    @Value("${spring.security.secret}")
     String jwtSecret = "gsync";
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String requestedApi = request.getServletPath();
         logger.info(requestedApi);
-        if (requestedApi.equals("/api/v1/login") || requestedApi.equals("/api/v1/registry")) {
+        if (requestedApi.equals("/api/v1/log_in") || requestedApi.equals("/api/v1/sign_in")) {
             filterChain.doFilter(request, response);
         } else {
             String token = request.getHeader("Authorization");

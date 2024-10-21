@@ -45,6 +45,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+            <version>42.2.23</version> <!-- Замените на актуальную версию -->
         </dependency>
         <dependency>
             <groupId>com.auth0</groupId>

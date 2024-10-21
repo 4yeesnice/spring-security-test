@@ -3,14 +3,13 @@ package org.kg.secure.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.Cascade;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.management.relation.Role;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Data
@@ -18,13 +17,30 @@ import java.util.stream.Collectors;
 public class Users implements UserDetails {
 
     @Id
-    @GeneratedValue
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
     private String username;
+    private String email;
+    private String phone;
     private String password;
+
+    @ManyToOne
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(name = "users_addresses",
+            joinColumns = @JoinColumn(name = "user_id" , referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "address_id", referencedColumnName = "id")
+    )
+    private Address address;
 
     @JsonProperty(value = "role")
     private Roles roles;
+
+    @OneToMany(mappedBy = "user")
+    private List<Parcel> parcel;
+
+    @OneToMany(mappedBy = "courier")
+    private List<Parcel> deliveries;
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -52,7 +68,7 @@ public class Users implements UserDetails {
         return true;
     }
 
-    enum Roles {
-        ADMIN, USER
+    public enum Roles {
+        ADMIN, USER, COURIER
     }
 }
