@@ -8,7 +8,7 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Value;
+import org.kg.secure.exceptions.token.BadTokenException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -21,6 +21,7 @@ import java.util.List;
 
 @Component
 public class JwtFilter extends OncePerRequestFilter {
+
 
     String jwtSecret = "gsync";
 
@@ -54,7 +55,7 @@ public class JwtFilter extends OncePerRequestFilter {
                         .asString();
 
                 if (tokenType.equals("refresh") && !requestedApi.equals("/api/refresh")) {
-                    // throw new BadTokenException("Refresh token used incorrectly");
+                     throw new BadTokenException("Refresh token used incorrectly");
                 }
 
                 var usernameToken = new UsernamePasswordAuthenticationToken(username, null, authorities);

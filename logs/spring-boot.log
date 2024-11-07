@@ -1,0 +1,232 @@
+2024-10-19T10:43:38.920+06:00  INFO 16252 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Starting DemoSpringSecurityApplication using Java 17.0.11 with PID 16252 (C:\Users\Erbol\IdeaProjects\demo spring security\target\classes started by Erbol in C:\Users\Erbol\IdeaProjects\demo spring security)
+2024-10-19T10:43:38.921+06:00  INFO 16252 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-10-19T10:43:39.247+06:00  INFO 16252 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19T10:43:39.278+06:00  INFO 16252 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-10-19T10:43:39.545+06:00  INFO 16252 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-19T10:43:39.552+06:00  INFO 16252 --- [demo spring security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19T10:43:39.553+06:00  INFO 16252 --- [demo spring security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-19T10:43:39.584+06:00  INFO 16252 --- [demo spring security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19T10:43:39.584+06:00  INFO 16252 --- [demo spring security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 640 ms
+2024-10-19T10:43:39.666+06:00  INFO 16252 --- [demo spring security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-19T10:43:39.693+06:00  INFO 16252 --- [demo spring security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-19T10:43:39.709+06:00  INFO 16252 --- [demo spring security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-19T10:43:39.859+06:00  INFO 16252 --- [demo spring security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-19T10:43:39.877+06:00  INFO 16252 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19T10:43:39.964+06:00  INFO 16252 --- [demo spring security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77e9dca8
+2024-10-19T10:43:39.965+06:00  INFO 16252 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19T10:43:40.428+06:00  INFO 16252 --- [demo spring security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-19T10:43:40.448+06:00  INFO 16252 --- [demo spring security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:43:40.619+06:00  INFO 16252 --- [demo spring security] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name getAuthenticationProvider
+2024-10-19T10:43:40.619+06:00  WARN 16252 --- [demo spring security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-19T10:43:40.629+06:00  WARN 16252 --- [demo spring security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19T10:43:40.886+06:00  INFO 16252 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-19T10:43:40.891+06:00  INFO 16252 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Started DemoSpringSecurityApplication in 2.175 seconds (process running for 2.431)
+2024-10-19T10:43:46.195+06:00  INFO 16252 --- [demo spring security] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19T10:43:46.196+06:00  INFO 16252 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19T10:43:46.196+06:00  INFO 16252 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-19T10:44:33.771+06:00  INFO 16252 --- [demo spring security] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:44:33.773+06:00  INFO 16252 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19T10:44:33.775+06:00  INFO 16252 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19T10:44:36.847+06:00  INFO 25460 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Starting DemoSpringSecurityApplication using Java 17.0.11 with PID 25460 (C:\Users\Erbol\IdeaProjects\demo spring security\target\classes started by Erbol in C:\Users\Erbol\IdeaProjects\demo spring security)
+2024-10-19T10:44:36.848+06:00  INFO 25460 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-10-19T10:44:37.168+06:00  INFO 25460 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19T10:44:37.201+06:00  INFO 25460 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-10-19T10:44:37.472+06:00  INFO 25460 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-19T10:44:37.480+06:00  INFO 25460 --- [demo spring security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19T10:44:37.480+06:00  INFO 25460 --- [demo spring security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-19T10:44:37.509+06:00  INFO 25460 --- [demo spring security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19T10:44:37.510+06:00  INFO 25460 --- [demo spring security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 641 ms
+2024-10-19T10:44:37.586+06:00  INFO 25460 --- [demo spring security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-19T10:44:37.612+06:00  INFO 25460 --- [demo spring security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-19T10:44:37.628+06:00  INFO 25460 --- [demo spring security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-19T10:44:37.783+06:00  INFO 25460 --- [demo spring security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-19T10:44:37.804+06:00  INFO 25460 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19T10:44:37.887+06:00  INFO 25460 --- [demo spring security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@eded048
+2024-10-19T10:44:37.889+06:00  INFO 25460 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19T10:44:38.362+06:00  INFO 25460 --- [demo spring security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-19T10:44:38.384+06:00  INFO 25460 --- [demo spring security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:44:38.561+06:00  INFO 25460 --- [demo spring security] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name getAuthenticationProvider
+2024-10-19T10:44:38.561+06:00  WARN 25460 --- [demo spring security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-19T10:44:38.572+06:00  WARN 25460 --- [demo spring security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19T10:44:38.817+06:00  INFO 25460 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-19T10:44:38.822+06:00  INFO 25460 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Started DemoSpringSecurityApplication in 2.187 seconds (process running for 2.439)
+2024-10-19T10:44:41.720+06:00  INFO 25460 --- [demo spring security] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19T10:44:41.720+06:00  INFO 25460 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19T10:44:41.721+06:00  INFO 25460 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-19T10:44:56.659+06:00  INFO 25460 --- [demo spring security] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:44:56.660+06:00  INFO 25460 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19T10:44:56.662+06:00  INFO 25460 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19T10:44:59.885+06:00  INFO 15248 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Starting DemoSpringSecurityApplication using Java 17.0.11 with PID 15248 (C:\Users\Erbol\IdeaProjects\demo spring security\target\classes started by Erbol in C:\Users\Erbol\IdeaProjects\demo spring security)
+2024-10-19T10:44:59.886+06:00  INFO 15248 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-10-19T10:45:00.211+06:00  INFO 15248 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19T10:45:00.242+06:00  INFO 15248 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-10-19T10:45:00.504+06:00  INFO 15248 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-19T10:45:00.511+06:00  INFO 15248 --- [demo spring security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19T10:45:00.511+06:00  INFO 15248 --- [demo spring security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-19T10:45:00.541+06:00  INFO 15248 --- [demo spring security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19T10:45:00.542+06:00  INFO 15248 --- [demo spring security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 635 ms
+2024-10-19T10:45:00.625+06:00  INFO 15248 --- [demo spring security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-19T10:45:00.653+06:00  INFO 15248 --- [demo spring security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-19T10:45:00.672+06:00  INFO 15248 --- [demo spring security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-19T10:45:00.843+06:00  INFO 15248 --- [demo spring security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-19T10:45:00.866+06:00  INFO 15248 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19T10:45:00.956+06:00  INFO 15248 --- [demo spring security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67e6eb52
+2024-10-19T10:45:00.957+06:00  INFO 15248 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19T10:45:01.440+06:00  INFO 15248 --- [demo spring security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-19T10:45:01.464+06:00  INFO 15248 --- [demo spring security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:45:01.644+06:00  INFO 15248 --- [demo spring security] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name getAuthenticationProvider
+2024-10-19T10:45:01.644+06:00  WARN 15248 --- [demo spring security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-19T10:45:01.655+06:00  WARN 15248 --- [demo spring security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19T10:45:01.905+06:00  INFO 15248 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-19T10:45:01.910+06:00  INFO 15248 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Started DemoSpringSecurityApplication in 2.236 seconds (process running for 2.49)
+2024-10-19T10:45:02.309+06:00  INFO 15248 --- [demo spring security] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19T10:45:02.309+06:00  INFO 15248 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19T10:45:02.309+06:00  INFO 15248 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-19T10:45:27.984+06:00  INFO 15248 --- [demo spring security] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:45:27.985+06:00  INFO 15248 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19T10:45:27.988+06:00  INFO 15248 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19T10:45:31.584+06:00  INFO 1212 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Starting DemoSpringSecurityApplication using Java 17.0.11 with PID 1212 (C:\Users\Erbol\IdeaProjects\demo spring security\target\classes started by Erbol in C:\Users\Erbol\IdeaProjects\demo spring security)
+2024-10-19T10:45:31.585+06:00  INFO 1212 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-10-19T10:45:31.932+06:00  INFO 1212 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19T10:45:31.962+06:00  INFO 1212 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-10-19T10:45:32.223+06:00  INFO 1212 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-19T10:45:32.230+06:00  INFO 1212 --- [demo spring security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19T10:45:32.230+06:00  INFO 1212 --- [demo spring security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-19T10:45:32.260+06:00  INFO 1212 --- [demo spring security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19T10:45:32.261+06:00  INFO 1212 --- [demo spring security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 652 ms
+2024-10-19T10:45:32.338+06:00  INFO 1212 --- [demo spring security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-19T10:45:32.367+06:00  INFO 1212 --- [demo spring security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-19T10:45:32.383+06:00  INFO 1212 --- [demo spring security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-19T10:45:32.536+06:00  INFO 1212 --- [demo spring security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-19T10:45:32.555+06:00  INFO 1212 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19T10:45:32.641+06:00  INFO 1212 --- [demo spring security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77e9dca8
+2024-10-19T10:45:32.642+06:00  INFO 1212 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19T10:45:33.102+06:00  INFO 1212 --- [demo spring security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-19T10:45:33.122+06:00  INFO 1212 --- [demo spring security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:45:33.292+06:00  INFO 1212 --- [demo spring security] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name getAuthenticationProvider
+2024-10-19T10:45:33.292+06:00  WARN 1212 --- [demo spring security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-19T10:45:33.302+06:00  WARN 1212 --- [demo spring security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19T10:45:33.546+06:00  INFO 1212 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-19T10:45:33.551+06:00  INFO 1212 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Started DemoSpringSecurityApplication in 2.183 seconds (process running for 2.452)
+2024-10-19T10:45:36.047+06:00  INFO 1212 --- [demo spring security] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19T10:45:36.047+06:00  INFO 1212 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19T10:45:36.048+06:00  INFO 1212 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-19T10:45:49.112+06:00  INFO 1212 --- [demo spring security] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:45:49.113+06:00  INFO 1212 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19T10:45:49.116+06:00  INFO 1212 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19T10:45:52.167+06:00  INFO 20024 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Starting DemoSpringSecurityApplication using Java 17.0.11 with PID 20024 (C:\Users\Erbol\IdeaProjects\demo spring security\target\classes started by Erbol in C:\Users\Erbol\IdeaProjects\demo spring security)
+2024-10-19T10:45:52.168+06:00  INFO 20024 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-10-19T10:45:52.497+06:00  INFO 20024 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19T10:45:52.528+06:00  INFO 20024 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-10-19T10:45:52.788+06:00  INFO 20024 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-19T10:45:52.795+06:00  INFO 20024 --- [demo spring security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19T10:45:52.795+06:00  INFO 20024 --- [demo spring security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-19T10:45:52.823+06:00  INFO 20024 --- [demo spring security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19T10:45:52.823+06:00  INFO 20024 --- [demo spring security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 633 ms
+2024-10-19T10:45:52.896+06:00  INFO 20024 --- [demo spring security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-19T10:45:52.921+06:00  INFO 20024 --- [demo spring security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-19T10:45:52.937+06:00  INFO 20024 --- [demo spring security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-19T10:45:53.093+06:00  INFO 20024 --- [demo spring security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-19T10:45:53.113+06:00  INFO 20024 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19T10:45:53.197+06:00  INFO 20024 --- [demo spring security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@241fc278
+2024-10-19T10:45:53.198+06:00  INFO 20024 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19T10:45:53.660+06:00  INFO 20024 --- [demo spring security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-19T10:45:53.680+06:00  INFO 20024 --- [demo spring security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:45:53.855+06:00  INFO 20024 --- [demo spring security] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name getAuthenticationProvider
+2024-10-19T10:45:53.856+06:00  WARN 20024 --- [demo spring security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-19T10:45:53.866+06:00  WARN 20024 --- [demo spring security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19T10:45:54.097+06:00  INFO 20024 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-19T10:45:54.102+06:00  INFO 20024 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Started DemoSpringSecurityApplication in 2.135 seconds (process running for 2.386)
+2024-10-19T10:45:56.008+06:00  INFO 20024 --- [demo spring security] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19T10:45:56.008+06:00  INFO 20024 --- [demo spring security] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19T10:45:56.009+06:00  INFO 20024 --- [demo spring security] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-19T10:46:04.139+06:00  INFO 20024 --- [demo spring security] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:46:04.140+06:00  INFO 20024 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19T10:46:04.144+06:00  INFO 20024 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19T10:46:07.217+06:00  INFO 21968 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Starting DemoSpringSecurityApplication using Java 17.0.11 with PID 21968 (C:\Users\Erbol\IdeaProjects\demo spring security\target\classes started by Erbol in C:\Users\Erbol\IdeaProjects\demo spring security)
+2024-10-19T10:46:07.219+06:00  INFO 21968 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-10-19T10:46:07.567+06:00  INFO 21968 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19T10:46:07.600+06:00  INFO 21968 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2024-10-19T10:46:07.881+06:00  INFO 21968 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-19T10:46:07.888+06:00  INFO 21968 --- [demo spring security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19T10:46:07.889+06:00  INFO 21968 --- [demo spring security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-19T10:46:07.919+06:00  INFO 21968 --- [demo spring security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19T10:46:07.919+06:00  INFO 21968 --- [demo spring security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 679 ms
+2024-10-19T10:46:07.998+06:00  INFO 21968 --- [demo spring security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-19T10:46:08.026+06:00  INFO 21968 --- [demo spring security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-19T10:46:08.044+06:00  INFO 21968 --- [demo spring security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-19T10:46:08.204+06:00  INFO 21968 --- [demo spring security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-19T10:46:08.224+06:00  INFO 21968 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19T10:46:08.312+06:00  INFO 21968 --- [demo spring security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b98225c
+2024-10-19T10:46:08.313+06:00  INFO 21968 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19T10:46:08.806+06:00  INFO 21968 --- [demo spring security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-19T10:46:08.829+06:00  INFO 21968 --- [demo spring security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:46:09.001+06:00  INFO 21968 --- [demo spring security] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name getAuthenticationProvider
+2024-10-19T10:46:09.001+06:00  WARN 21968 --- [demo spring security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-19T10:46:09.011+06:00  WARN 21968 --- [demo spring security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19T10:46:09.245+06:00  INFO 21968 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-19T10:46:09.250+06:00  INFO 21968 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Started DemoSpringSecurityApplication in 2.245 seconds (process running for 2.51)
+2024-10-19T10:46:10.510+06:00  INFO 21968 --- [demo spring security] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19T10:46:10.510+06:00  INFO 21968 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19T10:46:10.510+06:00  INFO 21968 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-19T10:46:38.101+06:00  INFO 21968 --- [demo spring security] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:46:38.102+06:00  INFO 21968 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19T10:46:38.105+06:00  INFO 21968 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19T10:46:41.234+06:00  INFO 16804 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Starting DemoSpringSecurityApplication using Java 17.0.11 with PID 16804 (C:\Users\Erbol\IdeaProjects\demo spring security\target\classes started by Erbol in C:\Users\Erbol\IdeaProjects\demo spring security)
+2024-10-19T10:46:41.235+06:00  INFO 16804 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-10-19T10:46:41.576+06:00  INFO 16804 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19T10:46:41.609+06:00  INFO 16804 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2024-10-19T10:46:41.878+06:00  INFO 16804 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-19T10:46:41.885+06:00  INFO 16804 --- [demo spring security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19T10:46:41.885+06:00  INFO 16804 --- [demo spring security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-19T10:46:41.915+06:00  INFO 16804 --- [demo spring security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19T10:46:41.915+06:00  INFO 16804 --- [demo spring security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 659 ms
+2024-10-19T10:46:41.992+06:00  INFO 16804 --- [demo spring security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-19T10:46:42.018+06:00  INFO 16804 --- [demo spring security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-19T10:46:42.034+06:00  INFO 16804 --- [demo spring security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-19T10:46:42.187+06:00  INFO 16804 --- [demo spring security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-19T10:46:42.207+06:00  INFO 16804 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19T10:46:42.294+06:00  INFO 16804 --- [demo spring security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59baf2c7
+2024-10-19T10:46:42.295+06:00  INFO 16804 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19T10:46:42.759+06:00  INFO 16804 --- [demo spring security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-19T10:46:42.779+06:00  INFO 16804 --- [demo spring security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:46:42.954+06:00  INFO 16804 --- [demo spring security] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name getAuthenticationProvider
+2024-10-19T10:46:42.954+06:00  WARN 16804 --- [demo spring security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-19T10:46:42.966+06:00  WARN 16804 --- [demo spring security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19T10:46:43.215+06:00  INFO 16804 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-19T10:46:43.221+06:00  INFO 16804 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Started DemoSpringSecurityApplication in 2.2 seconds (process running for 2.46)
+2024-10-19T10:46:45.108+06:00  INFO 16804 --- [demo spring security] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19T10:46:45.108+06:00  INFO 16804 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19T10:46:45.109+06:00  INFO 16804 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-19T10:47:20.932+06:00  INFO 16804 --- [demo spring security] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:47:20.933+06:00  INFO 16804 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19T10:47:20.935+06:00  INFO 16804 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-19T10:47:24.079+06:00  INFO 8 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Starting DemoSpringSecurityApplication using Java 17.0.11 with PID 8 (C:\Users\Erbol\IdeaProjects\demo spring security\target\classes started by Erbol in C:\Users\Erbol\IdeaProjects\demo spring security)
+2024-10-19T10:47:24.080+06:00  INFO 8 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-10-19T10:47:24.430+06:00  INFO 8 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-19T10:47:24.461+06:00  INFO 8 --- [demo spring security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-10-19T10:47:24.739+06:00  INFO 8 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-19T10:47:24.746+06:00  INFO 8 --- [demo spring security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-19T10:47:24.746+06:00  INFO 8 --- [demo spring security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-19T10:47:24.777+06:00  INFO 8 --- [demo spring security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-19T10:47:24.777+06:00  INFO 8 --- [demo spring security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 676 ms
+2024-10-19T10:47:24.860+06:00  INFO 8 --- [demo spring security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-19T10:47:24.886+06:00  INFO 8 --- [demo spring security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-19T10:47:24.903+06:00  INFO 8 --- [demo spring security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-19T10:47:25.055+06:00  INFO 8 --- [demo spring security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-19T10:47:25.074+06:00  INFO 8 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-19T10:47:25.166+06:00  INFO 8 --- [demo spring security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32e697ac
+2024-10-19T10:47:25.167+06:00  INFO 8 --- [demo spring security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-19T10:47:25.655+06:00  INFO 8 --- [demo spring security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-19T10:47:25.677+06:00  INFO 8 --- [demo spring security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:47:25.848+06:00  INFO 8 --- [demo spring security] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name getAuthenticationProvider
+2024-10-19T10:47:25.849+06:00  WARN 8 --- [demo spring security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-19T10:47:25.859+06:00  WARN 8 --- [demo spring security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-19T10:47:26.106+06:00  INFO 8 --- [demo spring security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-19T10:47:26.112+06:00  INFO 8 --- [demo spring security] [main] o.k.s.DemoSpringSecurityApplication      : Started DemoSpringSecurityApplication in 2.236 seconds (process running for 2.493)
+2024-10-19T10:47:28.429+06:00  INFO 8 --- [demo spring security] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-19T10:47:28.430+06:00  INFO 8 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-19T10:47:28.430+06:00  INFO 8 --- [demo spring security] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-19T10:48:10.090+06:00  INFO 8 --- [demo spring security] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-19T10:48:10.091+06:00  INFO 8 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-19T10:48:10.093+06:00  INFO 8 --- [demo spring security] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
